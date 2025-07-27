@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Whitepace</title>
 
     <!-- stylesheet cdn -->
-     <link rel="stylesheet" href="custom styles/styles.css">
+    <link rel="stylesheet" href="custom styles/styles.css" />
 
     <!-- *google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,24 +15,217 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-       <!-- daisyUI css cdn -->
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisyUI css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-<!-- icon cdn -->
- <script src="https://kit.fontawesome.com/2d41a42db0.js" crossorigin="anonymous"></script>
+    <!-- icon cdn -->
+    <script
+      src="https://kit.fontawesome.com/2d41a42db0.js"
+      crossorigin="anonymous"
+    ></script>
 
-<!-- tailwind css cdn -->
- <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <style type="text/tailwindcss">
-    @layer utilities {
-      .content-auto {
-        content-visibility: auto;
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
       }
-    }
-  </style>
-
+    </style>
   </head>
-  <body></body>
+  <body class="">
+    <!--  header section start hare-->
+    <header class="max-w-7xl mx-auto rubik-normal bg-[#043873]">
+      <!-- nav section start-->
+      <section class="">
+        <div class="navbar bg-[#043873] shadow-sm p-6">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost lg:hidden"
+              ></div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+
+            <div class="flex items-center justify-evenly">
+              <img src="icons/Logo Icon.svg" class="w-[40px]" alt="" />
+              <a class="btn btn-ghost text-2xl text-white font-bold"
+                >Whitepace</a
+              >
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <!-- button section start -->
+            <section class="flex gap-6 items-center justify-evenly">
+              <div class="dropdown dropdown-hover">
+                <div class="flex items-center justify-evenly pl-">
+                  <a
+                    tabindex="0"
+                    role="button"
+                    class="m-1 text-white text-base font-semibold"
+                    >Products</a
+                  >
+
+                  <img
+                    src="icons/right-chevron.png"
+                    class="w-4 rotate-45 ml-2"
+                    alt=""
+                  />
+                </div>
+                <ul
+                  tabindex="0"
+                  class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+                >
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 2</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown dropdown-hover">
+                <div class="flex items-center justify-evenly pl-">
+                  <a
+                    tabindex="0"
+                    role="button"
+                    class="m-1 text-white text-base font-semibold"
+                    >Solutions</a
+                  >
+
+                  <img
+                    src="icons/right-chevron.png"
+                    class="w-4 rotate-45 ml-2"
+                    alt=""
+                  />
+                </div>
+                <ul
+                  tabindex="0"
+                  class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+                >
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 2</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown dropdown-hover">
+                <div class="flex items-center justify-evenly pl-">
+                  <a
+                    tabindex="0"
+                    role="button"
+                    class="m-1 text-white text-base font-semibold"
+                    >Resources</a
+                  >
+
+                  <img
+                    src="icons/right-chevron.png"
+                    class="w-4 rotate-45 ml-2"
+                    alt=""
+                  />
+                </div>
+                <ul
+                  tabindex="0"
+                  class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+                >
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 2</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown dropdown-hover">
+                <div class="flex items-center justify-evenly pl-">
+                  <a
+                    tabindex="0"
+                    role="button"
+                    class="m-1 text-white text-base font-semibold"
+                    >Pricing</a
+                  >
+
+                  <img
+                    src="icons/right-chevron.png"
+                    class="w-4 rotate-45 ml-2"
+                    alt=""
+                  />
+                </div>
+                <ul
+                  tabindex="0"
+                  class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+                >
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 2</a></li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- button section end -->
+          </div>
+          <div class="navbar-end gap-5">
+            <button
+              class="py-3 px-8 bg-[#FFE492] rounded-md text-[#043873] text-base"
+            >
+              Login
+            </button>
+            <button
+              class="py-3 px-8 bg-[#4F9CF9] rounded-md text-white text-base flex items-center"
+            >
+              Try Whitepace free <i class="fa-solid fa-arrow-right pl-2"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- nav section start-->
+
+      <!-- nav details start -->
+      <section
+        class="p-5 h-[90vh] items-center flex"
+        style="
+          background-image: url(images/Element.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center bottom;
+        "
+      >
+        <div class="flex justify-between items-center">
+          <div>
+            <h1 class="text-6xl text-white font-semibold">
+              Get More Done with whitepace
+            </h1>
+            <p class="text-white text-base py-6">
+              Project management software that enables your teams to
+              collaborate, plan, analyze and manage everyday tasks
+            </p>
+            <button
+              class="py-3 px-8 bg-[#4F9CF9] rounded-md text-white text-base flex items-center"
+            >
+              Try Whitepace free <i class="fa-solid fa-arrow-right pl-2"></i>
+            </button>
+          </div>
+          <div class="flex justify-end items-center w-3/4">
+            <img src="images/pngwing.com.png" class="w-[80%]" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- nav details start -->
+    </header>
+    <!--  header section start hare-->
+  </body>
 </html>
