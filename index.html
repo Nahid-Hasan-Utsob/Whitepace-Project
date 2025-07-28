@@ -1,62 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Whitepace</title>
 
-    <!-- stylesheet cdn -->
-    <link rel="stylesheet" href="custom styles/styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whitepace</title>
 
-    <!-- *google font cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- daisyUI css cdn -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- stylesheet cdn -->
+  <link rel="stylesheet" href="custom styles/styles.css" />
 
-    <!-- icon cdn -->
-    <script
-      src="https://kit.fontawesome.com/2d41a42db0.js"
-      crossorigin="anonymous"
-    ></script>
+  <!-- *google font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
+  <!-- daisyUI css cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- tailwind css cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- icon cdn -->
+  <script src="https://kit.fontawesome.com/2d41a42db0.js" crossorigin="anonymous"></script>
 
-    <style type="text/tailwindcss">
-      @layer utilities {
-        .content-auto {
-          content-visibility: auto;
-        }
-      }
-    </style>
-  </head>
-  <body class="">
+  <!-- tailwind css cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style type="text/tailwindcss">
+    @layer utilities {
+            .content-auto {
+              content-visibility: auto;
+            }
+          }
+        </style>
+</head>
+
+<body class="">
+
+  <section class="px-6 bg-[#043873]">
     <!--  header section start hare-->
-    <header class="max-w-7xl mx-auto rubik-normal bg-[#043873]">
+    <header class=" rubik-normal bg-[#043873]">
       <!-- nav section start-->
       <section class="">
-        <div class="navbar bg-[#043873] shadow-sm p-6">
-          <div class="navbar-start">
+        <div class="navbar bg-[#043873] shadow-sm lg:p-6 ">
+          <div class="navbar-start sm:flex justify-between w-full">
+
+
+            <div class="flex items-center justify-evenly ">
+              <img src="icons/Logo Icon.svg" class="w-[40px]" alt="" />
+              <a class="btn btn-ghost text-2xl text-white font-bold">Whitepace</a>
+            </div>
             <div class="dropdown">
-              <div
-                tabindex="0"
-                role="button"
-                class="btn btn-ghost lg:hidden"
-              ></div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-              >
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 -mr-10 shadow ">
                 <li><a>Item 1</a></li>
                 <li>
                   <a>Parent</a>
@@ -69,35 +68,17 @@
               </ul>
             </div>
 
-            <div class="flex items-center justify-evenly">
-              <img src="icons/Logo Icon.svg" class="w-[40px]" alt="" />
-              <a class="btn btn-ghost text-2xl text-white font-bold"
-                >Whitepace</a
-              >
-            </div>
           </div>
           <div class="navbar-center hidden lg:flex">
             <!-- button section start -->
             <section class="flex gap-6 items-center justify-evenly">
               <div class="dropdown dropdown-hover">
                 <div class="flex items-center justify-evenly pl-">
-                  <a
-                    tabindex="0"
-                    role="button"
-                    class="m-1 text-white text-base font-semibold"
-                    >Products</a
-                  >
+                  <a tabindex="0" role="button" class="m-1 text-white text-base font-semibold">Products</a>
 
-                  <img
-                    src="icons/right-chevron.png"
-                    class="w-4 rotate-45 ml-2"
-                    alt=""
-                  />
+                  <img src="icons/right-chevron.png" class="w-4 rotate-45 ml-2" alt="" />
                 </div>
-                <ul
-                  tabindex="0"
-                  class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
-                >
+                <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
                   <li><a>Item 1</a></li>
                   <li><a>Item 2</a></li>
                 </ul>
@@ -105,23 +86,11 @@
 
               <div class="dropdown dropdown-hover">
                 <div class="flex items-center justify-evenly pl-">
-                  <a
-                    tabindex="0"
-                    role="button"
-                    class="m-1 text-white text-base font-semibold"
-                    >Solutions</a
-                  >
+                  <a tabindex="0" role="button" class="m-1 text-white text-base font-semibold">Solutions</a>
 
-                  <img
-                    src="icons/right-chevron.png"
-                    class="w-4 rotate-45 ml-2"
-                    alt=""
-                  />
+                  <img src="icons/right-chevron.png" class="w-4 rotate-45 ml-2" alt="" />
                 </div>
-                <ul
-                  tabindex="0"
-                  class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
-                >
+                <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
                   <li><a>Item 1</a></li>
                   <li><a>Item 2</a></li>
                 </ul>
@@ -129,23 +98,11 @@
 
               <div class="dropdown dropdown-hover">
                 <div class="flex items-center justify-evenly pl-">
-                  <a
-                    tabindex="0"
-                    role="button"
-                    class="m-1 text-white text-base font-semibold"
-                    >Resources</a
-                  >
+                  <a tabindex="0" role="button" class="m-1 text-white text-base font-semibold">Resources</a>
 
-                  <img
-                    src="icons/right-chevron.png"
-                    class="w-4 rotate-45 ml-2"
-                    alt=""
-                  />
+                  <img src="icons/right-chevron.png" class="w-4 rotate-45 ml-2" alt="" />
                 </div>
-                <ul
-                  tabindex="0"
-                  class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
-                >
+                <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
                   <li><a>Item 1</a></li>
                   <li><a>Item 2</a></li>
                 </ul>
@@ -153,23 +110,11 @@
 
               <div class="dropdown dropdown-hover">
                 <div class="flex items-center justify-evenly pl-">
-                  <a
-                    tabindex="0"
-                    role="button"
-                    class="m-1 text-white text-base font-semibold"
-                    >Pricing</a
-                  >
+                  <a tabindex="0" role="button" class="m-1 text-white text-base font-semibold">Pricing</a>
 
-                  <img
-                    src="icons/right-chevron.png"
-                    class="w-4 rotate-45 ml-2"
-                    alt=""
-                  />
+                  <img src="icons/right-chevron.png" class="w-4 rotate-45 ml-2" alt="" />
                 </div>
-                <ul
-                  tabindex="0"
-                  class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
-                >
+                <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
                   <li><a>Item 1</a></li>
                   <li><a>Item 2</a></li>
                 </ul>
@@ -178,15 +123,11 @@
 
             <!-- button section end -->
           </div>
-          <div class="navbar-end gap-5">
-            <button
-              class="py-3 px-8 bg-[#FFE492] rounded-md text-[#043873] text-base"
-            >
+          <div class="navbar-end gap-5 hidden lg:flex">
+            <button class="py-3 px-8 bg-[#FFE492] rounded-md text-[#043873] text-base">
               Login
             </button>
-            <button
-              class="py-3 px-8 bg-[#4F9CF9] rounded-md text-white text-base flex items-center"
-            >
+            <button class="py-3 px-8 bg-[#4F9CF9] rounded-md text-white text-base flex items-center">
               Try Whitepace free <i class="fa-solid fa-arrow-right pl-2"></i>
             </button>
           </div>
@@ -194,38 +135,1037 @@
       </section>
       <!-- nav section start-->
 
+
+
       <!-- nav details start -->
-      <section
-        class="p-5 h-[90vh] items-center flex"
-        style="
-          background-image: url(images/Element.png);
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-position: center bottom;
-        "
-      >
-        <div class="flex justify-between items-center">
-          <div>
-            <h1 class="text-6xl text-white font-semibold">
+      <section class="p-5 lg:h-[90vh] items-center flex" style="
+              background-image: url(images/Element.png);
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center bottom;
+            ">
+        <div class="flex justify-between items-center lg:flex-row flex-col sm:gap-5 mt-16 lg:mt-5">
+          <div class="flex flex-col  items-center text-center lg:text-start lg:items-start">
+            <h1 class="lg:text-6xl text-4xl text-white font-semibold">
               Get More Done with whitepace
             </h1>
             <p class="text-white text-base py-6">
               Project management software that enables your teams to
               collaborate, plan, analyze and manage everyday tasks
             </p>
-            <button
-              class="py-3 px-8 bg-[#4F9CF9] rounded-md text-white text-base flex items-center"
-            >
+            <button class="py-3 px-8 bg-[#4F9CF9] rounded-md text-white text-base flex items-center ">
               Try Whitepace free <i class="fa-solid fa-arrow-right pl-2"></i>
             </button>
           </div>
-          <div class="flex justify-end items-center w-3/4">
-            <img src="images/pngwing.com.png" class="w-[80%]" alt="" />
+          <div class="flex justify-end items-center lg:w-3/4 my-6">
+            <img src="images/pngwing.com.png" class="w-full" alt="" />
           </div>
         </div>
       </section>
-      <!-- nav details start -->
+      <!-- nav details end -->
+
+
+
     </header>
-    <!--  header section start hare-->
-  </body>
+    <!--  header section end hare-->
+
+  </section>
+
+  <!-- projects section start -->
+
+  <section class="px-6 bg-white lg:pt-32 ">
+
+    <section class="p-5 items-center bg-white lg:pb-24 pb-5">
+      <div class="flex md:flex-row flex-col justify-evenly gap-10  items-center">
+
+
+
+        <div class="p-6 text-center flex flex-col items-center lg:text-start lg:items-start">
+          <div>
+
+            <h1 class="lg:text-6xl text-4xl text-black font-semibold py-3 ">
+              Project <br> <span class="manage">Management</span>
+            </h1>
+            <p class="text-black text-base py-8 lg:w-3/4">
+              Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the
+              app. Take photos with the mobile app and save them to a note.
+            </p>
+          </div>
+
+          <div>
+
+            <button class="py-3 px-8 bg-[#4F9CF9] rounded-md text-white text-base flex items-center">
+              Get Started <i class="fa-solid fa-arrow-right pl-2"></i>
+            </button>
+          </div>
+
+        </div>
+        <div class="flex justify-center items-center w-3/4">
+          <img src="images/Work Together Image.png" class="lg:w-fit sm:w-[80%]" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="p-5 items-center bg-white lg:pb-24 pb-16">
+      <div class="flex justify-evenly gap-10  items-center flex-col-reverse lg:flex-row">
+
+        <div class="flex justify-center items-center lg:w-3/4 ">
+          <img src="images/Work Together Image.png" class="lg:w-fit sm:w-[80%]" alt="" />
+        </div>
+
+        <div class="p-6 flex flex-col items-center lg:text-start lg:items-start text-center">
+          <div>
+
+            <h1 class="lg:text-6xl text-4xl text-black font-semibold py-3 ">
+              Work <span class="manage"> together</span>
+            </h1>
+            <p class="text-black text-base py-8 lg:w-3/4">
+              With whitepace, share your notes with your colleagues and collaborate on them.
+              You can also publish a note to the internet and share the URL with others.
+
+            </p>
+          </div>
+
+          <div>
+
+            <button class="py-3 px-8 bg-[#4F9CF9] rounded-md text-white text-base flex items-center">
+              Get Started <i class="fa-solid fa-arrow-right pl-2"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </section>
+
+  <!-- project details end -->
+
+
+  <!-- *section 1  -->
+
+  <section class="px-6 bg-[#043873] lg:pt-32 pt-8">
+
+
+
+    <section class="p-5 items-center lg;pb-24 pb-16">
+      <div class="flex md:flex-row flex-col justify-evenly gap-10  items-center">
+
+
+
+        <div class="p-6 text-center flex flex-col items-center lg:text-start lg:items-start">
+          <div>
+
+            <h1 class="lg;text-5xl text-4xl  text-white font-semibold py-3 ">
+              <span class="manage pb-9 ">Management</span> Project
+            </h1>
+            <p class="text-white text-base py-8 lg:w-3/4">
+              Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as
+              notes.
+
+            </p>
+          </div>
+
+          <div>
+
+            <button class="py-3 px-8 bg-[#4F9CF9] rounded-md text-white text-base flex items-center">
+              Get Started <i class="fa-solid fa-arrow-right pl-2"></i>
+            </button>
+          </div>
+
+        </div>
+        <div class="flex justify-center items-center w-3/4">
+          <img src="images/Work Together Image.png" class="lg:w-fit sm:w-[80%]" alt="" />
+        </div>
+      </div>
+    </section>
+
+
+
+  </section>
+
+
+  <!-- *section 2  -->
+  <section class="px-6 bg-white lg:pt-32 pt-8">
+
+
+    <section class="p-5 items-center bg-white lg:pb-24">
+      <div class="flex justify-evenly gap-10  items-center flex-col lg:flex-row">
+
+        <div class="flex justify-center items-center w-3/4 ">
+          <img src="images/Work Together Image.png" class="lg:w-fit sm:w-[80%]" alt="" />
+        </div>
+
+        <div class="p-6 flex flex-col items-center lg:text-start lg:items-start text-center">
+          <div>
+
+            <h1 class="lg:text-6xl text-4xl text-black font-semibold py-3 ">
+              Customize it <br><span class="manage"> to your needs</span>
+            </h1>
+            <p class="text-black text-base py-8 lg:w-3/4">
+              Customize the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create
+              your own scripts and plugins using the Extension API.
+            </p>
+          </div>
+
+          <div>
+
+            <button class="py-3 px-8 bg-[#4F9CF9] rounded-md text-white text-base flex items-center">
+              Get Started <i class="fa-solid fa-arrow-right pl-2"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </section>
+
+
+  <!-- card section -->
+  <section class="px-6 bg-white lg:pt-32 pt-8">
+
+    <section>
+      <div class="p-6 flex flex-col items-center  text-center ">
+        <div>
+
+          <h1 class="lg:text-6xl text-4xl text-black font-semibold py-3 ">Choose<span class="manage"> Your Plan</span>
+          </h1>
+          <p class="text-black text-base py-8">
+            Whether you want to get organized, keep your personal life on track, or boost workplace productivity,
+            Evernote has the <br> right plan for you.
+          </p>
+        </div>
+    </section>
+
+
+    <section
+      class="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-evenly mx-auto max-w-6xl my-6">
+
+
+
+      <!-- card number 1 -->
+      <div class="border-[2px] border-[#FFE492] rounded-xl lg:p-6 p-5 flex flex-col  lg:gap-3 gap-2  ">
+        <h1 class="text-xl ">Free</h1>
+        <h1 class="text-4xl font-semibold">$0</h1>
+        <p class="lg:text-xl text-base font-semibold ">Capture ideas and find them <br>quickly</p>
+
+        <div class="flex flex-col  lg:gap-4 gap-3 text-start">
+
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> Sync unlimited
+              devices
+            </p>
+          </div>
+
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> 10 GB monthly
+              uploads
+            </p>
+          </div>
+
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i>200 MB max. note size
+            </p>
+          </div>
+
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> Customize Home
+              dashboard
+              and access extra widgets</p>
+          </div>
+
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> Connect primary
+              Google
+              Calendar account
+            </p>
+          </div>
+
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> Add due dates,
+              reminders, and notifications to your tasks
+            </p>
+          </div>
+
+
+        </div>
+
+        <div>
+
+          <button
+            class="py-3 px-8 bg-white rounded-md text-black border-[2px] mt-3 border-[#FFE492] text-xl flex items-center">
+            Get Started</button>
+        </div>
+
+      </div>
+
+      <!-- card number 2 -->
+      <div class=" rounded-xl p-10 flex flex-col  gap-3 bg-[#043873] ">
+        <h1 class="text-4xl text-white">Personal</h1>
+        <h1 class="text-5xl font-semibold text-[#FFE492]">$11.99</h1>
+        <p class="text-xl font-semibold text-white ">Keep home and family on track</p>
+
+        <div class="flex flex-col  gap-3 text-start text">
+
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="lg:text-xl text-base text-white"><i class="fa-regular fa-circle-check pr-2 text-xl text-[#FFE492]"></i> Sync
+              unlimited devices
+            </p>
+          </div>
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="lg:text-xl text-base text-white"><i class="fa-regular fa-circle-check pr-2 text-xl text-[#FFE492]"></i> 10 GB
+              monthly uploads
+
+            </p>
+          </div>
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="lg:text-xl text-base text-white"><i class="fa-regular fa-circle-check pr-2 text-xl text-[#FFE492]"></i> 200 MB
+              max. note size
+
+            </p>
+          </div>
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="lg:text-xl text-base text-white"><i class="fa-regular fa-circle-check pr-2 text-xl text-[#FFE492]"></i>
+              Customize Home dashboard and access extra widgets
+            </p>
+          </div>
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="lg:text-xl text-base text-white"><i class="fa-regular fa-circle-check pr-2 text-xl text-[#FFE492]"></i> Connect
+              primary Google Calendar account
+
+            </p>
+          </div>
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="lg:text-xl text-base text-white"><i class="fa-regular fa-circle-check pr-2 text-xl text-[#FFE492]"></i> Add due
+              dates, reminders, and notifications to your tasks
+
+            </p>
+          </div>
+
+        </div>
+
+        <div>
+
+          <button class="py-3 px-8 bg-[#4F9CF9] rounded-md text-white text-xl flex mt-4 items-center">
+            Get Started</button>
+        </div>
+
+      </div>
+
+
+
+      <!-- card number 3 -->
+      <div class="border-[2px] border-[#FFE492] rounded-xl p-6  flex flex-col  lg:gap-3 gap-2  ">
+        <h1 class="text-xl ">Organization</h1>
+        <h1 class="text-4xl font-semibold">$49.99</h1>
+        <p class="lg:text-xl text-base font-semibold ">Capture ideas and find them quickly</p>
+
+        <div class="flex flex-col  lg:gap-4 gap-3 text-start">
+
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> Sync unlimited
+              devices
+            </p>
+          </div>
+
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> 10 GB monthly
+              uploads
+            </p>
+          </div>
+
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i>200 MB max. note size
+            </p>
+          </div>
+
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> Customize Home
+              dashboard
+              and access extra widgets</p>
+          </div>
+
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> Connect primary
+              Google
+              Calendar account
+            </p>
+          </div>
+
+          <!-- items box -->
+          <div class="flex text-start items-baseline">
+            <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> Add due dates,
+              reminders, and notifications to your tasks
+            </p>
+          </div>
+
+
+        </div>
+
+        <div>
+
+          <button
+            class="py-3 px-8 bg-white rounded-md text-black border-[2px] mt-3 border-[#FFE492] text-xl flex items-center">
+            Get Started</button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- mobile slide version -->
+    <section class="lg:hidden block ">
+      <div class="carousel rounded-box flex gap-2">
+
+
+
+        <div class="carousel-item w-full">
+
+          <!-- card number 2 -->
+          <div class=" rounded-xl lg:p-10 p-5 flex flex-col  lg:gap-3 gap-2 bg-[#043873] ">
+            <h1 class="lg:text-4xl text-2xl text-white">Personal</h1>
+            <h1 class="lg:text-5xl text-3xl font-semibold text-[#FFE492]">$11.99</h1>
+            <p class="lg:text-xl text-base font-semibold text-white ">Keep home and family on track</p>
+
+            <div class="flex flex-col  lg:gap-3 gap-2 text-start ">
+
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="lg:text-xl text-base text-white"><i class="fa-regular fa-circle-check pr-2 text-xl text-[#FFE492]"></i>
+                  Sync unlimited devices
+                </p>
+              </div>
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="lg:text-xl text-base text-white"><i class="fa-regular fa-circle-check pr-2 text-xl text-[#FFE492]"></i> 10
+                  GB monthly uploads
+
+                </p>
+              </div>
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="lg:text-xl text-base text-white"><i class="fa-regular fa-circle-check pr-2 text-xl text-[#FFE492]"></i> 200
+                  MB max. note size
+
+                </p>
+              </div>
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="lg:text-xl text-base text-white"><i class="fa-regular fa-circle-check pr-2 text-xl text-[#FFE492]"></i>
+                  Customize Home dashboard and access extra widgets
+                </p>
+              </div>
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="lg:text-xl text-base text-white"><i class="fa-regular fa-circle-check pr-2 text-xl text-[#FFE492]"></i>
+                  Connect primary Google Calendar account
+
+                </p>
+              </div>
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="lg:text-xl text-base text-white"><i class="fa-regular fa-circle-check pr-2 text-xl text-[#FFE492]"></i> Add
+                  due dates, reminders, and notifications to your tasks
+
+                </p>
+              </div>
+
+            </div>
+
+            <div>
+
+              <button class="py-3 px-8 bg-[#4F9CF9] rounded-md text-white text-xl flex mt-4 items-center">
+                Get Started</button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="carousel-item w-full flex justify-center">
+
+          <!-- card number 1 -->
+          <div class="border-[2px] border-[#FFE492] rounded-xl lg:p-6 p-5 flex flex-col  lg:gap-3 gap-2  ">
+            <h1 class="text-xl ">Free</h1>
+            <h1 class="text-4xl font-semibold">$0</h1>
+            <p class="lg:text-xl text-base font-semibold ">Capture ideas and find them <br>quickly</p>
+
+            <div class="flex flex-col  lg:gap-4 gap-3 text-start">
+
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> Sync unlimited
+                  devices
+                </p>
+              </div>
+
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> 10 GB monthly
+                  uploads
+                </p>
+              </div>
+
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i>200 MB max. note
+                  size
+                </p>
+              </div>
+
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> Customize Home
+                  dashboard
+                  and access extra widgets</p>
+              </div>
+
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> Connect primary
+                  Google
+                  Calendar account
+                </p>
+              </div>
+
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> Add due dates,
+                  reminders, and notifications to your tasks
+                </p>
+              </div>
+
+
+            </div>
+
+            <div>
+
+              <button
+                class="py-3 px-8 bg-white rounded-md text-black border-[2px] mt-3 border-[#FFE492] text-xl flex items-center">
+                Get Started</button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="carousel-item w-full flex justify-center">
+          <!-- card number 3 -->
+          <div class="border-[2px] border-[#FFE492] rounded-xl p-6  flex flex-col  gap-3  ">
+            <h1 class="text-xl ">Organization</h1>
+            <h1 class="text-4xl font-semibold">$49.99</h1>
+            <p class="lg:text-xl text-base font-semibold ">Capture ideas and find them quickly</p>
+
+            <div class="flex flex-col  lg:gap-4 gap-3 text-start">
+
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> Sync unlimited
+                  devices
+                </p>
+              </div>
+
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> 10 GB monthly
+                  uploads
+                </p>
+              </div>
+
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i>200 MB max. note
+                  size
+                </p>
+              </div>
+
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> Customize Home
+                  dashboard
+                  and access extra widgets</p>
+              </div>
+
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> Connect primary
+                  Google
+                  Calendar account
+                </p>
+              </div>
+
+              <!-- items box -->
+              <div class="flex text-start items-baseline">
+                <p class="text-base text-black"><i class="fa-regular fa-circle-check pr-2 text-xl"></i> Add due dates,
+                  reminders, and notifications to your tasks
+                </p>
+              </div>
+
+
+            </div>
+
+            <div>
+
+              <button
+                class="py-3 px-8 bg-white rounded-md text-black border-[2px] mt-3 border-[#FFE492] text-xl flex items-center">
+                Get Started</button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+
+
+  <!-- work section -->
+  <section class="mx-auto bg-[#043873] lg:py-32 py-8 px-5 my-5 taskey">
+
+    <section>
+      <div class="p-6 flex flex-col items-center  text-center ">
+    
+
+          <h1 class="lg:text-6xl text-4xl text-white font-semibold py-3 ">Your work, everywhere <span class="manage"> you are</span>
+          </h1>
+          <p class="text-white text-base py-8">
+            Access your notes from your computer, phone or tablet by synchronising with various services, including
+            whitepace, Dropbox <br>and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A
+            terminal app is also available!
+          </p>
+
+
+          <button class="py-3 px-8 bg-[#4F9CF9] rounded-md text-white text-base flex items-center">
+            Try Tackey <i class="fa-solid fa-arrow-right pl-2" aria-hidden="true"></i>
+          </button>
+      </div>
+
+      </div>
+    </section>
+  </section>
+
+
+  <!-- projects section start -->
+
+  <section class="px-6 bg-white lg:pt-32 ">
+
+    <section class="p-5 items-center bg-white lg:pb-24 ">
+      <div class="flex md:flex-row flex-col-reverse justify-evenly gap-10  items-center">
+
+
+
+        <div class="p-6 text-center flex flex-col items-center lg:text-start lg:items-start">
+          <div>
+
+            <h1 class="lg:text-6xl text-4xl text-black font-semibold py-3 ">
+              100% <span class="manage">your data </span>
+            </h1>
+            <p class="text-black text-base py-8 lg:w-3/4">
+              The app is open source and your notes are saved to an open format, so you'll always have access to them.
+              Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
+            </p>
+          </div>
+
+          <div>
+
+            <button class="py-3 px-8 bg-[#4F9CF9] rounded-md text-white text-base flex items-center">
+              Get Started <i class="fa-solid fa-arrow-right pl-2"></i>
+            </button>
+          </div>
+
+        </div>
+        <div class="flex justify-center items-center w-3/4">
+          <img src="images/Element.svg" class="lg:w-fit sm:w-[80%]" alt="" />
+        </div>
+      </div>
+    </section>
+
+
+
+  </section>
+
+  <!-- project details end -->
+
+
+  <section>
+    <div class="p-6 flex flex-col items-center  text-center  lg:my-20 my-8">
+      <div>
+
+        <h1 class="lg:text-6xl text-4xl text-black font-semibold py-3 ">Our<span class="manage"> sponsors</span>
+        </h1>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- sponsor section -->
+  <section>
+    <div class="flex items-center justify-evenly lg:gap-14 gap-20  lg:mb-24 mb-9 flex-col sm:flex-row ">
+      <img src="images/Apple.svg" class="h-10 lg:h-full" alt="">
+      <img src="images/Slack.svg"  class="h-10 lg:h-full alt="">
+      <img src="images/Microsoft.svg"  class="h-10 lg:h-full alt="">
+      <img src="images/Google.svg"  class="h-10 lg:h-full alt="">
+    </div>
+  </section>
+
+
+
+
+
+  <section class="px-6 bg-[#043873] lg:pt-32 pt-9">
+
+
+
+    <section class="p-5 items-center  lg:pb-24 pb-10">
+      <div class="flex md:flex-row flex-col justify-evenly gap-10  items-center">
+
+        <div class="flex justify-center items-center w-3/4">
+          <img src="images/Apps.svg" class="lg:w-fit sm:w-[80%]" alt="">
+        </div>
+
+        <div class="p-6 text-center flex flex-col items-center lg:text-start lg:items-start">
+          <div>
+
+            <h1 class="lg:text-5xl text-4xl text-white font-semibold py-3 ">
+              Work with Your Favorite Apps Using whitepace
+            </h1>
+            <p class="text-white text-base py-8 lg:w-3/4">
+              Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the
+              tools you need for your project success.
+
+            </p>
+          </div>
+
+          <div>
+
+            <button class="py-3 px-8 bg-[#4F9CF9] rounded-md text-white text-base flex items-center">
+              Read more <i class="fa-solid fa-arrow-right pl-2" aria-hidden="true"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+  </section>
+
+
+
+  <section>
+    <div class="p-6 flex flex-col items-center  text-center  lg:my-16 my-7">
+      <div>
+
+        <h1 class="lg:text-6xl text-4xl text-black font-semibold py-3 ">Our<span class="manage"> sponsors</span>
+        </h1>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- customer card -->
+  <section
+    class="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-evenly mx-auto max-w-6xl my-6">
+
+
+
+    <!-- card number 1 -->
+    <div class="flex flex-col justify-center gap-8 py-14 px-5  rounded-md">
+      <div>
+        <img src="icons/Quote.png" class="text-black" alt="">
+      </div>
+      <h1 class="text-black text-base">Whitepate is designed as a collaboration tool for businesses that is a full
+        project management solution.</h1>
+      <div class="bg-black h-[2px] w-full"></div>
+
+      <div class="flex gap-9 items-center justify-between">
+        <div class="avatar">
+          <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
+            <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center gap-2">
+          <h1 class="text-black text-xl font-semibold">Oberon Shaw, MCH</h1>
+          <p class="text-black text-base">Head of Talent Acquisition, North America</p>
+        </div>
+      </div>
+    </div>
+    <!-- card number 2 -->
+    <div class="flex flex-col justify-center gap-8 py-14 px-5 bg-[#4F9CF9] rounded-md">
+      <div>
+        <img src="icons/Quote.png" class="text-white" alt="">
+      </div>
+      <h1 class="text-white text-base">Whitepate is designed as a collaboration tool for businesses that is a full
+        project management solution.</h1>
+      <div class="bg-black h-[2px] w-full"></div>
+
+      <div class="flex gap-9 items-center justify-between">
+        <div class="avatar">
+          <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
+            <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center gap-2">
+          <h1 class="text-blue-800 text-xl font-semibold">Oberon Shaw, MCH</h1>
+          <p class="text-white text-base">Head of Talent Acquisition, North America</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- card number 3 -->
+    <div class="flex flex-col justify-center gap-8 py-14 px-5 bg-[#4F9CF9 rounded-md]">
+      <div>
+        <img src="icons/Quote.png" class="text-black" alt="">
+      </div>
+      <h1 class="text-black text-base">Whitepate is designed as a collaboration tool for businesses that is a full
+        project management solution.</h1>
+      <div class="bg-black h-[2px] w-full"></div>
+
+      <div class="flex gap-9 items-center justify-between">
+        <div class="avatar">
+          <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
+            <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center gap-2">
+          <h1 class="text-black text-xl font-semibold">Oberon Shaw, MCH</h1>
+          <p class="text-black text-base">Head of Talent Acquisition, North America</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- customer mobile section -->
+
+  <!-- mobile slide version -->
+  <section class="lg:hidden block ">
+    <div class="carousel rounded-box flex gap-2 m-4">
+
+
+
+      <div class="carousel-item w-full">
+
+        <!-- card number 1-->
+        <div class="flex flex-col justify-center lg:gap-8 h-fit gap-5 py-14 px-5 bg-[#4F9CF9] rounded-md">
+          <div>
+            <img src="icons/Quote.png" class="text-white h-10 lg:h-full" alt="">
+          </div>
+          <h1 class="text-white text-base">Whitepate is designed as a collaboration tool for businesses that is a full
+            project management solution.</h1>
+          <div class="bg-black h-[2px] w-full"></div>
+
+          <div class="flex gap-9 items-center justify-between">
+            <div class="avatar">
+              <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
+                <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
+              </div>
+            </div>
+
+            <div class="flex flex-col justify-center gap-2">
+              <h1 class="text-blue-800 text-xl font-semibold">Oberon Shaw, MCH</h1>
+              <p class="text-white text-base">Head of Talent Acquisition, North America</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="carousel-item w-full flex justify-center">
+
+        <!-- card number 2 -->
+  <div class="flex flex-col justify-center lg:gap-8 h-fit gap-5 py-14 px-5 rounded-md bg-indigo-400">
+          <div>
+ <img src="icons/Quote.png" class="text-white h-10 lg:h-full" alt="">
+          </div>
+          <h1 class="text-black text-base">Whitepate is designed as a collaboration tool for businesses that is a full
+            project management solution.</h1>
+          <div class="bg-black h-[2px] w-full"></div>
+
+          <div class="flex gap-9 items-center justify-between">
+            <div class="avatar">
+              <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
+                <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
+              </div>
+            </div>
+
+            <div class="flex flex-col justify-center gap-2">
+              <h1 class="text-black text-xl font-semibold">Oberon Shaw, MCH</h1>
+              <p class="text-black text-base">Head of Talent Acquisition, North America</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item w-full flex justify-center">
+
+        <!-- card number 3-->
+
+      <div class="flex flex-col justify-center lg:gap-8 h-fit gap-5 py-14 bg-orange-400 px-5 rounded-md">
+          <div>
+ <img src="icons/Quote.png" class="text-white h-10 lg:h-full" alt="">
+          </div>
+          <h1 class="text-black text-base">Whitepate is designed as a collaboration tool for businesses that is a full
+            project management solution.</h1>
+          <div class="bg-black h-[2px] w-full"></div>
+
+          <div class="flex gap-9 items-center justify-between">
+            <div class="avatar">
+              <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
+                <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
+              </div>
+            </div>
+
+            <div class="flex flex-col justify-center gap-2">
+              <h1 class="text-black text-xl font-semibold">Oberon Shaw, MCH</h1>
+              <p class="text-black text-base">Head of Talent Acquisition, North America</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    </div>
+  </section>
+
+  <!-- last section -->
+  <section class="mx-auto bg-[#043873] lg:py-32 py-8 px-5 mt-5 ">
+
+    <section>
+      <div class="p-6 flex flex-col items-center  text-center ">
+
+        <h1 class="lg;text-6xl text-4xl text-white font-semibold py-3 ">Try Whitepace <br> today
+        </h1>
+        <p class="text-white text-base py-8">
+          Get started for free. <br>
+          Add your whole team as your needs grow.
+        </p>
+
+
+        <button class="py-3 px-8 bg-[#4F9CF9] rounded-md text-white text-base flex items-center">
+          Try Taskey free <i class="fa-solid fa-arrow-right pl-2" aria-hidden="true"></i>
+        </button>
+        <h1 class="text-white my-6">On a big team? Contact sales</h1>
+
+        <div class="flex items-center justify-evenly gap-4  ">
+
+          <img src="icons/apple-black-logo 2.png" alt="">
+          <img src="icons/windows-logo 1.png" alt="">
+          <img src="icons/android-logo 1.png" alt="">
+        </div>
+      </div>
+
+
+    </section>
+  </section>
+
+  <!-- footer section -->
+  <footer class="bg-[#043873] text-white px-6 py-10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8
+              text-center sm:text-center md:text-center lg:text-left">
+
+      <!-- Logo + Description -->
+      <div class="col-span-1 lg:col-span-1">
+        <h2 class="text-xl font-bold mb-2">whitespace</h2>
+        <p class="text-sm opacity-80">
+          whitespace was created for the new ways we live and work. We make a better workspace around the world
+        </p>
+      </div>
+
+      <!-- Product -->
+      <div>
+        <h3 class="font-semibold mb-2">Product</h3>
+        <ul class="space-y-1 text-sm opacity-90">
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Customer stories</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div>
+        <h3 class="font-semibold mb-2">Resources</h3>
+        <ul class="space-y-1 text-sm opacity-90">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Guides & tutorials</a></li>
+          <li><a href="#">Help center</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h3 class="font-semibold mb-2">Company</h3>
+        <ul class="space-y-1 text-sm opacity-90">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Media kit</a></li>
+        </ul>
+      </div>
+
+      <!-- CTA Box -->
+      <div class="lg:col-span-1">
+        <h3 class="font-semibold mb-2">Try It Today</h3>
+        <p class="text-sm opacity-90 mb-3">Get started for free. Add your whole team as your needs grow.</p>
+        <button class="bg-blue-500 text-white text-sm px-4 py-2 rounded hover:bg-blue-600 transition">
+          Start today →
+        </button>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-white/20 mt-10 pt-6 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-4 text-sm text-white/70
+              text-center sm:text-center md:text-center lg:text-left">
+      <div class="flex flex-wrap justify-center lg:justify-start items-center gap-4">
+        <span>🌐 English</span>
+        <a href="#">Terms & privacy</a>
+        <a href="#">Security</a>
+        <a href="#">Status</a>
+        <span>©2021 Whitespace LLC.</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+  </main>
+
+
+</body>
+
 </html>

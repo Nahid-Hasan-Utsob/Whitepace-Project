@@ -7,5 +7,20 @@
 }
 
 body{
-  background-color: #043873;
+  
+}
+
+.manage{
+  background-image:url(../icons/shadow.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  padding-bottom:15px ;
+}
+
+.taskey{
+  background-image: url(../images/BACKGROUND.png);
+  background-position:left;
+  background-repeat: no-repeat;
+
 }
